@@ -1,0 +1,14 @@
+body {
+    min-height: 150vh;
+    overflow:scroll;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    margin:50px;
+    color: slateblue;
+    text-align: center;
+}
+
+
