@@ -5,21 +5,21 @@ body {
 nav.navbar,
 footer {
   z-index: 1015;
-  background: #A1FFCE;
+  background: #fde1ff;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+  background: -webkit-linear-gradient(to right, #efc8ff, #fde1ff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+  background: linear-gradient(to right, #efc8ff, #fde1ff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
 .bg-gradient {
-  background: #A1FFCE;
+  background: #fde1ff;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #FAFFD1, #A1FFCE);
+  background: -webkit-linear-gradient(to right, #efc8ff, #fde1ff);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FAFFD1, #A1FFCE);
+  background: linear-gradient(to right, #efc8ff, #fde1ff);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -34,15 +34,15 @@ header>svg {
   margin-top: -1em;
 }
 
-header>svg path {
-  z-index: 1010;
-  fill: linear-gradient(to right, #FAFFD1, #A1FFCE);
+header > svg path {
+    z-index: 1010;
+    fill: linear-gradient(to right, #efc8ff, #fde1ff);
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 15px;
-  background: #A1FFCE;
+  background: #fde1ff;
 }
 
 ::-webkit-scrollbar-track {
@@ -51,13 +51,13 @@ header>svg path {
 }
 
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 14px 14px #FAFFD1;
+  box-shadow: inset 0 0 14px 14px #efc8ff;
   border: solid 3px transparent;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  box-shadow: inset 0 0 14px #FAFFD1;
+  box-shadow: inset 0 0 14px #efc8ff;
 }
 
 @keyframes animateWave {
