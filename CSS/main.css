@@ -3,7 +3,6 @@ body {
 
 }
 
-
 nav.navbar,
 footer {
   z-index: 1015;
@@ -16,8 +15,8 @@ footer {
   }
 
   nav.navbar{
-
-  }
+        font-size: 190%;
+          }
 
 .bg-gradient {
   background: #ABFFF9;
