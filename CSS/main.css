@@ -1,6 +1,5 @@
 body {
   min-height: 150vh;
-
 }
 
 nav.navbar,
@@ -17,6 +16,15 @@ footer {
   nav.navbar{
         font-size: 190%;
           }
+
+form {
+    color : #B1ABFF;
+    border: solid;
+}
+
+.d-flex.form{
+    flex-direction: column;
+}
 
 .bg-gradient {
   background: #ABFFF9;
