@@ -1,10 +1,12 @@
 body {
   min-height: 150vh;
+  
 }
 
 #Text-CV{
     font-size: 110%;
     font-family: Book-Antiqua;
+    
 }
 
 nav.navbar,
@@ -39,7 +41,7 @@ form {
   font-size: 190%;
   }
 
-#Travaux-titre{
+#Travaux-titre1{
     z-index: 1015;
     background: #ABFFF9;
     /* fallback for old browsers */
@@ -49,8 +51,17 @@ form {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+#Travaux-titre2{
+     margin-top:50px;
+     margin-bottom:20px;
+}
+
 #Travaux-content>p{
    margin:50px;
+   }
+
+Travaux-content{
+    background:#F0F0F0;
 }
 
 .bg-gradient {
