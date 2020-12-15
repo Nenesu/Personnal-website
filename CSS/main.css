@@ -28,17 +28,6 @@ form {
     flex-direction:column;
 }
 
-#skip-to-content-link{
-    z-index: 1015;
-  background: #ABFFF9;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B1ABFF, #ABFFF9);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B1ABFF, #ABFFF9);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-size: 190%;
-  }
-
 #Titre1{
     z-index: 1015;
     background: #ABFFF9;
@@ -54,13 +43,10 @@ form {
      margin-bottom:20px;
 }
 
-#Travaux-content>p{
+#Travaux-content>p, #Travaux-content2>p{
    margin:50px;
    }
 
-#Travaux-content2>p{
-   margin:50px;
-}
 
 .bg-gradient {
   background: #ABFFF9;
