@@ -1,7 +1,6 @@
 body {
   min-height: 150vh;
-  
-}
+ }
 
 #Text-CV{
     font-size: 110%;
@@ -21,7 +20,7 @@ footer {
 
   nav.navbar{
         font-size: 190%;
-          }
+ }
 
 form {
     color : #B1ABFF;
@@ -58,6 +57,10 @@ form {
 #Travaux-content>p{
    margin:50px;
    }
+
+#Travaux-content2>p{
+   margin:50px;
+}
 
 .bg-gradient {
   background: #ABFFF9;
