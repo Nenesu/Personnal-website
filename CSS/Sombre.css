@@ -1,5 +1,6 @@
 body {
   min-height: 150vh;
+  background-color:#895F5F !important;
  }
 
 nav.navbar, footer {
@@ -11,6 +12,7 @@ nav.navbar, footer {
   background: linear-gradient(to right, #4F0505, #000000);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color:#DCA9A9;
+ 
   }
 
   nav.navbar{
@@ -32,13 +34,14 @@ form {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #4F0505, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 #Travaux-titre2{
      margin-top:50px;
      margin-bottom:20px;
      text-decoration:underline;
-     color:#000000;
+     
 }
 
 #Travaux-content>p, #Travaux-content2>p, #liens-content-intro>p{
@@ -53,6 +56,10 @@ img{
     margin-bottom:10%;
 }
 
+button:hover{
+    color: #FFD4D4 !important;
+}
+
 .bg-gradient {
   background: #000000;
   /* fallback for old browsers */
@@ -65,7 +72,7 @@ img{
 *{
     font-size:105%;
     font-family: Berlin Sans FB;
-    font-color:#DCA9A9;
+    color:#752727 !important;
 }
 
 header>svg {
