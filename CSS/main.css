@@ -28,7 +28,8 @@ form {
     flex-direction:column;
 }
 
-#Titre1{
+#Titre1, #Titre-liens{
+    margin-top:50px;
     z-index: 1015;
     background: #ABFFF9;
     /* fallback for old browsers */
@@ -43,10 +44,13 @@ form {
      margin-bottom:20px;
 }
 
-#Travaux-content>p, #Travaux-content2>p{
+#Travaux-content>p, #Travaux-content2>p, #liens-content-intro>p{
    margin:50px;
    }
 
+#liens-content{
+    margin-bottom:100px;
+}
 
 .bg-gradient {
   background: #ABFFF9;
@@ -55,6 +59,11 @@ form {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #B1ABFF, #ABFFF9);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+*{
+    font-size:105%;
+
 }
 
 header>svg {
