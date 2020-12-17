@@ -7,8 +7,7 @@ body {
     font-family: Book-Antiqua;
 }
 
-nav.navbar,
-footer {
+nav.navbar, footer {
   z-index: 1015;
   background: #ABFFF9;
   /* fallback for old browsers */
@@ -19,7 +18,7 @@ footer {
   }
 
   nav.navbar{
-        font-size: 190%;
+   font-size: 120%;
  }
 
 form {
@@ -42,14 +41,20 @@ form {
 #Travaux-titre2{
      margin-top:50px;
      margin-bottom:20px;
+     text-decoration:underline;
+     color:#ABFFF9;
 }
 
 #Travaux-content>p, #Travaux-content2>p, #liens-content-intro>p{
-   margin:50px;
+   margin:5%;
    }
 
+img{
+    margin:1%;
+}
+
 #liens-content{
-    margin-bottom:100px;
+    margin-bottom:10%;
 }
 
 .bg-gradient {
@@ -63,7 +68,6 @@ form {
 
 *{
     font-size:105%;
-
 }
 
 header>svg {

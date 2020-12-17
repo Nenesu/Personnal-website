@@ -17,6 +17,14 @@
 		  crossorigin="anonymous" />
 	<!-- Fontawesome, utilisé avec bootstrap : logos-->
 
+	<script>
+        function ChangerCSS (CSS)
+        {
+            document.getElementById('CSSStyle').setAttribute('href', CSS);
+        }
+    </script>
+	<!--Style Switcher-->
+
 	<link rel="icon" href="../img/favicon.ico" />
 
 	<title>Ines - main</title>
@@ -35,6 +43,12 @@
 				<ul class="navbar-nav">
 					<li class="nav-item active">
 						<a class="nav-link" href="../HTML/index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Titre1">Travaux <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#Titre-liens">Liens <span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
 			</div>
@@ -129,6 +143,7 @@
 			<ul>
 				<li>Wiki fait en cours de Systèmes, portant sur le personnage <a href="https://bianca-di-angelo.fandom.com/fr/wiki/Wiki_Bianca_Di_Angelo">Bianca Di Angelo</a></li>
 				<li>Site d'un ami qui m'a aidée sur ce projet : <a href="https://astrologgy.info"> Alexis Balthazard</a></li>
+				<li>Un projet que je trouve génial : <a href="https://play.aidungeon.io">Ai Dungeon</a> qui est une IA qui permet de participer à un jeu de rôle !</li>
 			</ul>
 		</div>
 
@@ -146,6 +161,7 @@
 					<p class="mb-0 text-secondary">Ines © 2020-2021</p>
 					<a class="m-1 btn btn-lg btn-outline-info" href="#NomPrenomCV" rel="noopener noreferrer"><i class="far fa-caret-square-up"></i></a>
 					<!-- bouton pour remonter en haut de page-->
+					<button class="m-1 btn btn-lg btn-outline-info" onclick="ChangerCSS ('../css/FirstCSSFile.css')"><i class="fas fa-lightbulb"></i></button>
 				</div>
 
 			</div>
