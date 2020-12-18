@@ -23,7 +23,7 @@ form {
     flex-direction:column;
 }
 
-h1{
+ h1{
     margin-top:50px;
     z-index: 1015;
     background: #ABFFF9;
@@ -32,28 +32,27 @@ h1{
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #B1ABFF, #ABFFF9);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align:center;
+    color: #7D79B3;
 }
 
-#Travaux-titre2, #Titre2, h3{
-     margin-top:50px;
-     margin-bottom:20px;
-     text-decoration:underline;
-     color:#B1ABFF;
+h3{
+    margin-top:1.5% !important;
+    text-decoration:underline;
+    color:#B1ABFF;
+    text-align:center;
+    font-weight:bold;
 }
 
-#Travaux-content>p, #Travaux-content2>p, #liens-content-intro>p, p{
-   margin:1.5%;
-   }
+#Presentation p, #Liens p, #Travaux p{
+   margin:2%;
+ }
 
 img{
     margin:1%;
 }
 
-#Presentation>img{
-    size:20%;
-}
-
-#liens-content{
+#Liens ul{
     margin-bottom:10%;
 }
 

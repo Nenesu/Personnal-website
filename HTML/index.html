@@ -45,10 +45,10 @@
 						<a class="nav-link" href="../HTML/index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#Titre1">Travaux <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#Travaux">Travaux <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#Titre-liens">Liens <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#Liens">Liens <span class="sr-only">(current)</span></a>
 					</li>
 				</ul>
 			</div>
@@ -83,17 +83,13 @@
 		</div>
 	</div> <!-- Fin de la div de la présentation-->
 
-	<div id="Travaux"  class="d-flex justify-content-center align-items-center text-info"> 
-		<div id="Titre1" class="d-flex justify-content-center align-items-center text-info"> 
-			<h1> Mes Travaux </h1>
-		</div>
+	<div id="Travaux"> 
+		<h1> Mes Travaux </h1>
+		
+		<h3>Labyrinthe en python</h3>
 
-		<div id="Travaux-titre2" class="d-flex justify-content-center align-items-center text-info"> 
-			<h2>Labyrinthe en python</h2>
-		</div>
-
-		<div id="Travaux-content" class ="d-flex justify-content-center align-items-center text-info">
-			<img src="../img/PreviewJeuPy.png" alt="Une preview de l'allure de mon jeu en python"/>
+		<div id="JeuPy" class ="d-flex justify-content-center align-items-center text-info">
+			<img src="../img/PreviewJeuPy.png" height=60% width=50% alt="Une preview de l'allure de mon jeu en python"/>
 			<p>
 				Ce jeu a été réalisé en python pour le baccalauréat 2019 avec l'aide de Sakina DAVOUST. Son aspect étrange et sombre est un genre de blague entre nous, j'en suis désolée.<br>
 				Nous avons suivi les tutoriels de <a href="https://www.youtube.com/channel/UC2vm-0XX5RkWCXWwtBZGOXg">TokyoEdTech</a> sur youtube. <br>
@@ -104,12 +100,10 @@
 				<a class="m-1 btn btn-lg btn-outline-info" href="https://github.com/Nenesu/labyrinthe-python/archive/master.zip" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a>
 			</p>
 		</div>
-		
-		<div id="Travaux-titre2" class="d-flex justify-content-center align-items-center text-info"> 
-			<h2>Platformer unity</h2>
-		</div>
+		  
+		<h3>Platformer unity</h3>
 
-		<div id="Travaux-content2" class ="d-flex justify-content-center align-items-center text-info">
+		<div id="JeuUni" class ="d-flex justify-content-center align-items-center text-info">
 			<p>
 				Ce jeu est un platformer très simple fait sous Unity. Il me sert de projet d'apprentissage du logiciel et du C#. <br> 
 				Il n'est pour l'instant pas jouable à cause d'erreurs C# que je ne parviens pas à régler à cause de mes faibles connaissances du langage. <br>
@@ -119,28 +113,26 @@
 
 				<a class="m-1 btn btn-lg btn-outline-info" href="https://github.com/Nenesu/2dPlatformer-unity/archive/master.zip" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a>
 			</p>
-			<img src="../img/PreviewPlatformer.png" alt="Une preview de l'allure de mon jeu sur unity"/>
+			<img src="../img/PreviewPlatformer.png"  height=60% width=50% alt="Une preview de l'allure de mon jeu sur unity"/>
 		</div>
 	</div> <!--Fin de la div des Travaux-->
 
 
-		<div id ="Titre-liens" class="d-flex justify-content-center align-items-center text-info">
-			<h1>Liens utiles</h1>
-		</div>
+	<div id="Liens" class="d-flex justify-content-center align-items-center flex-column text-info">
+		<h1>Liens conseillés</h1>
 
-		<div id="liens-content-intro" class ="d-flex flex-column justify-content-center align-items-center text-info">
+		<div id="Text-Liens" class="d-flex justify-content-center align-items-center text-info">
 			<p>
-				Ici, je vais vous partager quelques liens que je trouve utiles ou intéressants !  <br>
+				Ici vous trouverez plusieurs liens que j'ai jugés intéressants !
 			</p>
-		</div>
-
-		<div id="liens-content" class ="d-flex justify-content-center align-items-center text-info">
 			<ul>
 				<li>Wiki fait en cours de Systèmes, portant sur le personnage <a href="https://bianca-di-angelo.fandom.com/fr/wiki/Wiki_Bianca_Di_Angelo">Bianca Di Angelo</a></li>
 				<li>Site d'un ami qui m'a aidée sur ce projet : <a href="https://astrologgy.info"> Alexis Balthazard</a></li>
 				<li>Un projet que je trouve génial : <a href="https://play.aidungeon.io">Ai Dungeon</a> qui est une IA qui permet de participer à un jeu de rôle !</li>
 			</ul>
 		</div>
+	</div> <!-- Fin de la div Liens-->
+
 
 		<footer class="fixed-bottom">
 			<div class="d-flex justify-content-around align-items-center text-info">
@@ -152,7 +144,7 @@
 				<!--Logos de contact qui redirigent vers mes différents liens, les logos viennent de fontawesome-->
 				<div> <a href="../HTML/Page_formulaire.html">Votre avis nous intéresse !</a> </div>
 
-				<div class="d-flex justify-content-between align-items-center text-info">
+				<div class="d-flex flex-row justify-content-between align-items-center text-info">
 					<p class="mb-0 text-secondary">Ines ©2020-2021</p>
 					<a class="m-1 btn btn-lg btn-outline-info" href="#NomPrenomCV" rel="noopener noreferrer"><i class="far fa-caret-square-up"></i></a>
 					<!-- bouton pour remonter en haut de page-->
