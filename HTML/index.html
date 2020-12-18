@@ -18,12 +18,51 @@
 	<!-- Fontawesome, utilisé avec bootstrap : logos-->
 
 	<script>
-        function ChangerCSS (CSS)
-        {
-            document.getElementById('CSS').setAttribute('href', CSS);
-        }
-    </script>
-	<!--Style Switcher-->
+		const Design = {
+			/* Change le DOM pour charger le nouveau design. */
+			ChangerCSS: function(CSS) {
+				return new Promise((resolve, reject) => {
+					let newlink = document.createElement('link');
+
+					newlink.setAttribute('rel', 'stylesheet');
+					newlink.setAttribute('type', 'text/css');
+					newlink.setAttribute('href', CSS);
+
+					newlink.setAttribute('id', 'design');
+
+					newlink.onload = () => resolve();
+					newlink.onerror = error => reject(error);
+
+					document.getElementsByTagName('head').item(0).appendChild(newlink);
+				}); /*Fin du return new Promise*/
+			},/*Fin du ChangerCSS*/
+
+			/* Permet de changer de design (parmi ceux présents dans le dossier css) */
+			changedesign: function(design, save) {
+				console.log('[Designs] >> Chargement du fichier :', '../CSS/' + design + '.css');
+
+				if (save) {
+					localStorage.setItem('design', design);
+					document.location.reload();
+				}/*fin du if*/
+				else return design.changeCSS('./assets/css/design-' + design + '.css');
+			},/*fin du changedesign*/
+			/* On vérifie qu'on charge le bon design */
+			 load: function() {
+				const design = localStorage.getItem('design') || 'minimalist';
+				console.log('[Designs] >> Chargement :', design);
+
+				const el = document.querySelector('a[data-design="' + design + '"]');
+				if (!el) console.warn("[Designs] >> Ce design n'est pas reconnu.");
+				else el.textContent += ' ✅';
+
+				return design.changedesign(design);
+			}/*Fin load:function*/
+			windows.addEventListener('DOMContentLoaded, Design.load');
+		} /*Fin fonction const design*/
+		
+	</script>
+	
 
 	<link rel="icon" href="../img/favicon.ico" />
 
@@ -149,8 +188,8 @@
 					<a class="m-1 btn btn-lg btn-outline-info" href="#Presentation" rel="noopener noreferrer"><i class="far fa-caret-square-up"></i></a>
 					<!-- bouton pour remonter en haut de page-->
 
-					<button class="m-1 btn btn-lg btn-outline-info" onclick="ChangerCSS ('../CSS/Sombre.css')"><i class="fas fa-lightbulb"></i></button>
-					<button class="m-1 btn btn-lg btn-outline-info" onclick="ChangerCSS('../CSS/main.css')"><i class="far fa-lightbulb"></i></button>
+					<button class="m-1 btn btn-lg btn-outline-info" onclick="ChangerCSS (Sombre')"><i class="fas fa-lightbulb"></i></button>
+					<button class="m-1 btn btn-lg btn-outline-info" onclick="ChangerCSS('main')"><i class="far fa-lightbulb"></i></button>
 					<!-- boutons du style-switch-->
 				</div>
 			</div>
