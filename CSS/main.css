@@ -38,11 +38,11 @@ form {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#Travaux-titre2{
+#Travaux-titre2, #Titre2, h2{
      margin-top:50px;
      margin-bottom:20px;
      text-decoration:underline;
-     color:#ABFFF9;
+     color:#B1ABFF;
 }
 
 #Travaux-content>p, #Travaux-content2>p, #liens-content-intro>p{
