@@ -18,12 +18,38 @@
 		<!-- Fontawesome, utilisé avec bootstrap : utilisation de logos-->
 
 		<script>
-			function ChangerCSS (CSS)
-			{
-				document.getElementById('CSS').setAttribute('href', CSS);
-			}
-		</script>
-		<!--Style Switcher-->
+		
+		function creerNouveauLink(css) {
+			let newlink = document.createElement('link');
+
+			newlink.setAttribute('rel', 'stylesheet');
+			newlink.setAttribute('type', 'text/css'); // valeur à pas changer 
+			newlink.setAttribute('href', '../CSS/' + css);
+
+			newlink.setAttribute('id', 'design');
+
+			document.getElementsByTagName('head').item(0).appendChild(newlink);
+		}
+
+		function changerDesign(thm, save) {
+			console.log('[Designs] >> Chargement du fichier :', '../CSS/' + thm + '.css');
+
+				if (save) {
+				localStorage.setItem('thm', thm);
+				document.location.reload();
+				}
+			else creerNouveauLink(thm + '.css');
+		}
+
+		function load() {
+			const thm = localStorage.getItem('thm') || 'main';
+			console.log('[Designs] >> loading :', thm);
+
+			changerDesign(thm);
+		}
+
+		window.addEventListener('DOMContentLoaded', load)
+	</script>
 
 		<link rel="icon" href="../img/favicon.ico" />
 
@@ -97,8 +123,9 @@
 					</div>
 
 					<div class="d-flex justify-content-between align-items-center text-info">
-						<button class="m-1 btn btn-lg btn-outline-info" onclick="ChangerCSS ('../CSS/Sombre.css')"><i class="fas fa-lightbulb"></i></button>
-						<button class="m-1 btn btn-lg btn-outline-info" onclick="ChangerCSS('../CSS/main.css')"><i class="far fa-lightbulb"></i></button>
+						<a href="" class="m-1 btn btn-lg btn-outline-info" data-thm="Sombre" onclick=" changerDesign('Green', true)"><i class="fas fa-lightbulb"></i></a>
+						<a href="" class="m-1 btn btn-lg btn-outline-info" data-thm="main" onclick=" changerDesign('main', true)"><i class="far fa-lightbulb"></i></a>
+					<!-- boutons du style-switch-->
 					</div>
 				</div>
 		</footer>

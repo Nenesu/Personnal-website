@@ -1,0 +1,170 @@
+body {
+  min-height: 150vh;
+  width:100%;
+  background-color: #E7E7E7 !important;
+ }
+
+nav.navbar {
+    z-index: 1015;
+    background: #ABFFF9;
+     /* Au cas où, pour les vieux navigateurs! */
+    background: -webkit-linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+ footer{
+    z-index: 1015;
+    background: #ABFFF9;
+     /* Au cas où, pour les vieux navigateurs! */
+    background: -webkit-linear-gradient(to right, #ABFFF9, #B1ABFF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ABFFF9, #B1ABFF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+ 
+ footer a:hover, #Travaux a:hover{
+      color:#000000 !important;
+      background-color: #DAFFCF !important;
+ }
+
+nav.navbar{
+    font-size: 120%;
+ }
+
+h1{
+    margin-top:50px;
+    z-index: 1015;
+    background: #76B73F;
+    /* Au cas où, pour les vieux navigateurs! */
+    background: -webkit-linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align:center;
+    color: #78A244;
+}
+
+h3{
+    margin-top:1.5% !important;
+    text-decoration:underline;
+    text-align:center;
+    font-weight:bold;
+    color: #3A4F37;
+}
+
+
+#Presentation p, #Liens p, #Travaux p{
+   margin:2%;
+ }
+
+ header i{
+      color: #BCFFB2;
+ }
+
+img{
+    margin:1%;
+}
+
+#Liens ul{
+    margin-bottom:10%;
+}
+
+#Text-CV{
+    font-size: 103%;
+}
+
+*{
+    font-size:110%;
+    font-family: Sylfaen;
+    color: #3A4F37;
+}
+
+/*CSS du formulaire*/
+form {
+    background-color:#DCEADA;
+    padding:10px;
+    width:280px;
+ }
+
+label {
+    margin-top:10px;
+    display:block;
+ }
+
+label.inline {
+     display:inline;
+    margin-right:50px;
+ }
+
+input, textarea {
+    background-color:#D5FFB2;
+ }
+
+input, textarea{
+    padding:3px;
+    border:5px dashed #9EC82E;
+    border-radius:5px;
+    width:200px;
+    box-shadow:1px 1px 2px #D5FFB2 inset;
+ }
+
+
+/* CSS plus général*/
+.bg-gradient {
+    background: #ABFFF9;
+    /* Au cas où pour les vieux navigateurs ! */
+    background: -webkit-linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header>svg {
+    z-index: 1010;
+    display: block;
+    pointer-events: none;
+    transform-origin: top;
+    animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    height: 5em;
+    width: 100%;
+    margin-top: -1em;
+}
+
+header > svg path {
+    z-index: 1010;
+    fill: linear-gradient(to right, #B1ABFF, #ABFFF9);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+    background: #ABFFF9;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 14px 14px transparent;
+    border: solid 3px transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 14px 14px #B1ABFF;
+    border: solid 3px transparent;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:window-inactive { 
+    box-shadow: inset 0 0 14px #B1ABFF;
+}
+
+@keyframes animateWave {
+  0% {
+    transform: scale(1, 0);
+  }
+
+  100% {
+    transform: scale(1, 1);
+  }
+}
+

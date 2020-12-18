@@ -20,28 +20,48 @@
 
 
 	<script>
-		ChangerCSS:function(CSS)
-		{
+		
+		function creerNouveauLink(css) {
 			let newlink = document.createElement('link');
 
 			newlink.setAttribute('rel', 'stylesheet');
-			 newlink.setAttribute('type', '../CSS/');
-			 newlink.setAttribute('href', CSS);
+			newlink.setAttribute('type', 'text/css'); // valeur à pas changer 
+			newlink.setAttribute('href', '../CSS/' + css);
 
 			newlink.setAttribute('id', 'design');
 
 			document.getElementsByTagName('head').item(0).appendChild(newlink);
-		},/*Fin du ChangerCSS*/
-		windows.addEventListener('DOMContentLoaded', Theme.load)
+		}
+
+		function changerDesign(thm, save) {
+			console.log('[Designs] >> Chargement du fichier :', '../CSS/' + thm + '.css');
+
+				if (save) {
+				localStorage.setItem('thm', thm);
+				document.location.reload();
+				}
+			else creerNouveauLink(thm + '.css');
+		}
+
+		function load() {
+			const thm = localStorage.getItem('thm') || 'main';
+			console.log('[Designs] >> loading :', thm);
+
+			changerDesign(thm);
+		}
+
+		window.addEventListener('DOMContentLoaded', load)
 	</script>
 	
-
+	<script type="text/javascript" src="https://click123.ca/dist/js/snow.js"></script>
+	<!--Un petit script pour faire tomber de la neige ! -->
+	
 	<link rel="icon" href="../img/favicon.ico" />
 
 	<title>Ines - main</title>
 </head>
 
-<body>
+<body window.onload(changerDesign("main"))>
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<i class="fas fa-code"></i> <!--Le logo du site, pas un bouton, simplement une décoration-->
@@ -139,6 +159,7 @@
 			<ul>
 				<li>Wiki fait en cours de Systèmes, portant sur le personnage <a href="https://bianca-di-angelo.fandom.com/fr/wiki/Wiki_Bianca_Di_Angelo">Bianca Di Angelo</a></li>
 				<li>Site d'un ami qui m'a aidée sur ce projet : <a href="https://astrologgy.info"> Alexis Balthazard</a></li>
+				<li>Et merci à <a href="http://thomascardon.fr/"> Thomas Cardon</a> qui m'a beaucoup aidée aussi !</li>
 				<li>Un projet que je trouve génial : <a href="https://play.aidungeon.io">Ai Dungeon</a> qui est une IA qui permet de participer à un jeu de rôle !</li>
 			</ul>
 		</div>
@@ -160,8 +181,8 @@
 					<a class="m-1 btn btn-lg btn-outline-info" href="#Presentation" rel="noopener noreferrer"><i class="far fa-caret-square-up"></i></a>
 					<!-- bouton pour remonter en haut de page-->
 
-					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="Sombre" onclick="ChangerCSS('Sombre', true)"><i class="fas fa-lightbulb"></i></a>
-					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="main" onclick="ChangerCSS('main', true)"><i class="far fa-lightbulb"></i></a>
+					<a href="" class="m-1 btn btn-lg btn-outline-info" data-thm="Sombre" onclick=" changerDesign('Green', true)"><i class="fas fa-lightbulb"></i></a>
+					<a href="" class="m-1 btn btn-lg btn-outline-info" data-thm="main" onclick=" changerDesign('main', true)"><i class="far fa-lightbulb"></i></a>
 					<!-- boutons du style-switch-->
 				</div>
 			</div>
