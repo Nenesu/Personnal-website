@@ -1,24 +1,20 @@
 body {
   min-height: 150vh;
+  width:100%;
  }
 
-#Text-CV{
-    font-size: 110%;
-    font-family: Book-Antiqua;
-}
-
 nav.navbar, footer {
-  z-index: 1015;
-  background: #ABFFF9;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B1ABFF, #ABFFF9);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B1ABFF, #ABFFF9);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
+    z-index: 1015;
+    background: #ABFFF9;
+     /* Au cas où, pour les vieux navigateurs! */
+    background: -webkit-linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
 
-  nav.navbar{
-   font-size: 120%;
+nav.navbar{
+    font-size: 120%;
  }
 
 form {
@@ -31,7 +27,7 @@ h1{
     margin-top:50px;
     z-index: 1015;
     background: #ABFFF9;
-    /* fallback for old browsers */
+    /* Au cas où, pour les vieux navigateurs! */
     background: -webkit-linear-gradient(to right, #B1ABFF, #ABFFF9);
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #B1ABFF, #ABFFF9);
@@ -46,39 +42,48 @@ h1{
 }
 
 #Travaux-content>p, #Travaux-content2>p, #liens-content-intro>p, p{
-   margin:5%;
+   margin:1.5%;
    }
 
 img{
     margin:1%;
 }
 
+#Presentation>img{
+    size:20%;
+}
+
 #liens-content{
     margin-bottom:10%;
 }
 
-.bg-gradient {
-  background: #ABFFF9;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #B1ABFF, #ABFFF9);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #B1ABFF, #ABFFF9);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#Text-CV{
+    font-size: 110%;
+    font-family: Book-Antiqua;
 }
 
 *{
     font-size:105%;
 }
 
+.bg-gradient {
+    background: #ABFFF9;
+    /* Au cas où pour les vieux navigateurs ! */
+    background: -webkit-linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B1ABFF, #ABFFF9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 header>svg {
-  z-index: 1010;
-  display: block;
-  pointer-events: none;
-  transform-origin: top;
-  animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
-  height: 5em;
-  width: 100%;
-  margin-top: -1em;
+    z-index: 1010;
+    display: block;
+    pointer-events: none;
+    transform-origin: top;
+    animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    height: 5em;
+    width: 100%;
+    margin-top: -1em;
 }
 
 header > svg path {
@@ -88,23 +93,23 @@ header > svg path {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 15px;
-  background: #ABFFF9;
+    width: 15px;
+    background: #ABFFF9;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 14px 14px transparent;
-  border: solid 3px transparent;
+    box-shadow: inset 0 0 14px 14px transparent;
+    border: solid 3px transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 14px 14px #B1ABFF;
-  border: solid 3px transparent;
-  border-radius: 10px;
+    box-shadow: inset 0 0 14px 14px #B1ABFF;
+    border: solid 3px transparent;
+    border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:window-inactive {
-  box-shadow: inset 0 0 14px #B1ABFF;
+::-webkit-scrollbar-thumb:window-inactive { 
+    box-shadow: inset 0 0 14px #B1ABFF;
 }
 
 @keyframes animateWave {
