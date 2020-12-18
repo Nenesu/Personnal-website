@@ -20,12 +20,12 @@
 
 
 	<script>
-		ChangerCSS: function(CSS)
+		ChangerCSS:function(CSS)
 		{
 			let newlink = document.createElement('link');
 
 			newlink.setAttribute('rel', 'stylesheet');
-			 newlink.setAttribute('type', 'text/css');
+			 newlink.setAttribute('type', '../CSS/');
 			 newlink.setAttribute('href', CSS);
 
 			newlink.setAttribute('id', 'design');
@@ -160,8 +160,8 @@
 					<a class="m-1 btn btn-lg btn-outline-info" href="#Presentation" rel="noopener noreferrer"><i class="far fa-caret-square-up"></i></a>
 					<!-- bouton pour remonter en haut de page-->
 
-					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="Sombre" onclick="design.ChangerCSS('Sombre', true)"><i class="fas fa-lightbulb"></i></a>
-					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="main" onclick="design.ChangerCSS('main', true)"><i class="far fa-lightbulb"></i></a>
+					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="Sombre" onclick="ChangerCSS('Sombre', true)"><i class="fas fa-lightbulb"></i></a>
+					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="main" onclick="ChangerCSS('main', true)"><i class="far fa-lightbulb"></i></a>
 					<!-- boutons du style-switch-->
 				</div>
 			</div>
