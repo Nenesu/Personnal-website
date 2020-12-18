@@ -56,9 +56,8 @@ img{
     margin-bottom:10%;
 }
 
-.button:hover{
+a:hover,button:hover{
     background-color: #FFD4D4 !important;
-    color:white !important;
 }
 
 .bg-gradient {
