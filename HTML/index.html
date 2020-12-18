@@ -9,8 +9,6 @@
 	<meta name="keywords" content="projet,ines,hamidi,étudiant,iut,aix,marseille,aix-en-provence,informatique,gamedev">
 	<meta name="author" content="Ines HAMIDI">
 
-	<link rel="stylesheet" href="../CSS/main.css" as="style" onload="this.rel = 'stylesheet'">
-
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
 		  integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 	<!--Stylesheet bootstrap : idéal pour le web responsive-->
@@ -22,48 +20,19 @@
 
 
 	<script>
-		const Design = {
-			/* Change le DOM pour charger le nouveau design. */
-			ChangerCSS: function(CSS) {
-				return new Promise((resolve, reject) => {
-					let newlink = document.createElement('link');
+		ChangerCSS: function(CSS)
+		{
+			let newlink = document.createElement('link');
 
-					newlink.setAttribute('rel', 'stylesheet');
-					newlink.setAttribute('type', 'text/css');
-					newlink.setAttribute('href', CSS);
+			newlink.setAttribute('rel', 'stylesheet');
+			 newlink.setAttribute('type', 'text/css');
+			 newlink.setAttribute('href', CSS);
 
-					newlink.setAttribute('id', 'design');
+			newlink.setAttribute('id', 'design');
 
-					newlink.onload = () => resolve();
-					newlink.onerror = error => reject(error);
-
-					document.getElementsByTagName('head').item(0).appendChild(newlink);
-				}); /*Fin du return new Promise*/
-			},/*Fin du ChangerCSS*/
-
-			/* Permet de changer de design (parmi ceux présents dans le dossier css) */
-			changedesign: function(design, save) {
-				console.log('[Designs] >> Chargement du fichier :', '../CSS/' + design + '.css');
-
-				if (save) {
-					localStorage.setItem('design', design);
-					document.location.reload();
-				}/*fin du if*/
-				else return design.changeCSS('./assets/css/design-' + design + '.css');
-			},/*fin du changedesign*/
-			/* On vérifie qu'on charge le bon design */
-			 load: function() {
-				const design = localStorage.getItem('design') || 'minimalist';
-				console.log('[Designs] >> Chargement :', design);
-
-				const el = document.querySelector('a[data-design="' + design + '"]');
-				if (!el) console.warn("[Designs] >> Ce design n'est pas reconnu.");
-				else el.textContent += ' ✅';
-
-				return design.changedesign(design);
-			}/*Fin load:function*/
-			windows.addEventListener('DOMContentLoaded, Design.load');
-		} /*Fin fonction const design*/
+			document.getElementsByTagName('head').item(0).appendChild(newlink);
+		},/*Fin du ChangerCSS*/
+		windows.addEventListener('DOMContentLoaded', Theme.load)
 	</script>
 	
 
@@ -191,8 +160,8 @@
 					<a class="m-1 btn btn-lg btn-outline-info" href="#Presentation" rel="noopener noreferrer"><i class="far fa-caret-square-up"></i></a>
 					<!-- bouton pour remonter en haut de page-->
 
-					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="Sombre" onclick="Design.changeDesign('Sombre', true)"><i class="fas fa-lightbulb"></i></a>
-					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="main" onclick="Design.changeDesign('main', true)"><i class="far fa-lightbulb"></i></a>
+					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="Sombre" onclick="design.ChangerCSS('Sombre', true)"><i class="fas fa-lightbulb"></i></a>
+					<a href="" class="m-1 btn btn-lg btn-outline-info" data-theme="main" onclick="design.ChangerCSS('main', true)"><i class="far fa-lightbulb"></i></a>
 					<!-- boutons du style-switch-->
 				</div>
 			</div>
