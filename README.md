@@ -4,7 +4,7 @@ Here you will find my personnal website. It contains some informations about me 
 
 *You can find my work as a progammer* [here](https://github.com/Nenesu)
 
-*You can find this website's code* [here](https://github.com/Nenesu/Personnal-website) *and* [here](https://vercel.com/nenesu/personnal-website)
+*You can find this website's code* [here](https://github.com/Nenesu/Personnal-website) *and* [here](https://ineshamidi.now.sh/HTML)
 
 Please **do not re-use my informations without my consent**, and I hope you will enjoy discovering my website !
 
@@ -16,7 +16,4 @@ It contains :
 * Examples of my work you can download and test (**Those are for test purpose only, the ressources used are linked, feel free to make your own**)
 * Websites I find useful or just great
 * A nice form to give me some advice 
-
-
-*à utiliser : style switcher (with cookies)*
 
