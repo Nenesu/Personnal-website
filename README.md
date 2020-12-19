@@ -4,7 +4,7 @@ Here you will find my personnal website. It contains some informations about me 
 
 *You can find my work as a progammer* [here](https://github.com/Nenesu)
 
-*You can find this website's code* [here](https://github.com/Nenesu/Personnal-website) *and* [here](https://ineshamidi.now.sh/HTML)
+*You can find this website's code* [here](https://github.com/Nenesu/Personnal-website) *and* [here](https://ineshamidi.now.sh/HTML/index.html)
 
 Please **do not re-use my informations without my consent**, and I hope you will enjoy discovering my website !
 
